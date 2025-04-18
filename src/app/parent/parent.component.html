@@ -6,8 +6,19 @@
     </li>
 </ul>
 
-<p *ngIf="isLoggedIn">Login Successfull</p>
-<p *ngIf="!isLoggedIn">Login UnSuccessfull</p>
+
+<div *ngIf="isLoggedIn; else elseBlock">Login Successfull</div>
+<ng-template #elseBlock>Login UnSuccessfull</ng-template>
 
 
-<app-child [name]="userName"> </app-child>
+<app-child [name]="userName" [isUserLoggedIn]="isLoggedIn" (updateUsernameEvent)="updateUsernameRequest($event)" 
+[iplTeamNameChild]="iplTeamNameParent" (capitaliseEvent)="capitalise($event)">
+</app-child>
+
+<h2>{{this.iplTeamNameParent}}</h2>
+
+<h2>{{this.newUsername}}</h2>
+
+<div>
+    
+</div>

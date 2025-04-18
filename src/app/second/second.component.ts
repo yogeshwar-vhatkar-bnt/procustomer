@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class SecondComponent {
 
+  isActiveStatus= true
+  isDisabledStatus = true
 }

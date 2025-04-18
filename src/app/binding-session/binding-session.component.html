@@ -1,0 +1,9 @@
+<p>binding-session works!</p>
+
+<button [disabled]="isDisabled" (click)="incrementCount()" [attr.title]="msg" >Add Button</button>
+
+<p>Count: {{ this.count }}</p>
+<p>Is Disabled: {{ isDisabled }}</p>
+
+<input title="empInput" [(ngModel)] = "empName"> 
+<p>Employee Name: {{ empName }}</p> 

@@ -12,5 +12,17 @@ export class ParentComponent {
   isLoggedIn : boolean = true;
 
   userName : string = 'John Doe';
+
+  newUsername : string = ''
+
+  iplTeamNameParent : string = 'mumbai indians';
+
+  updateUsernameRequest(name: string) {
+    this.newUsername = name;
+  }
+
+  capitalise(name: string) {
+    this.iplTeamNameParent = name;
+  }
 }
 
