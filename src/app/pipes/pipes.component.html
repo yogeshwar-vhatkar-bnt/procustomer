@@ -1,0 +1,42 @@
+<p>pipes works!</p>
+
+<h1>Todays Date : {{todayDate}}</h1>
+<h1>Piped Todays Date : {{todayDate | date: 'mediumDate'}}</h1>
+
+<h1>Base Currency Amount : {{amount | currency: 'USD'}}</h1>
+<h1>Converted Currency Amount : {{amount | currency: 'INR'}}</h1>
+
+<h2>Current : {{featureName}}</h2>
+<h2>Uppercase : {{featureName | uppercase}}</h2>
+<h2>Lowercase : {{featureName | lowercase}}</h2>
+<h2>Titlecase : {{featureName | titlecase}}</h2>
+
+<h3>number : {{amount}}</h3>
+<h3>number : {{amount | number:'2.2-4'}}</h3>
+
+<h3>markPercent : {{markPercent}}</h3>
+<h3>converted markPercent  : {{markPercent | number:'4.0-4'}}</h3>
+
+<h3>Person : {{person}}</h3>
+
+<h3>Person Json : {{person | json}}</h3>
+
+
+<h1>Slice feature example</h1>
+<h2>Original : {{featureName}}</h2>
+<h2>Slice 0:5 : {{featureName | slice: 0:5}}</h2>
+<h2>Slice 5: {{featureName | slice: 5}}</h2>
+<h2>Slice 0:-5 : {{featureName | slice: 0:-5}}</h2>
+<h2>Slice -5: {{featureName | slice: -5}}</h2>
+<h2>Slice 0: {{featureName | slice: 0}}</h2>
+<h2>Slice -0: {{featureName | slice: -0}}</h2>
+<h2>Slice 1: {{featureName | slice: 1}}</h2>
+<h2>Slice -1: {{featureName | slice: -1}}</h2>
+
+<h3>Person : {{person}}</h3>
+<h3>Person Key-Value : {{person | keyvalue}}</h3>
+<ul *ngFor="let p of person | keyvalue">
+  <li>{{p.key}} : {{p.value}}</li>
+</ul>
+
+<p>{{person.gender | i18nSelect: salutationMap}} {{person.name}}</p>
