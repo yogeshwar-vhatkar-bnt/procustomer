@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
-import { SecondComponent } from './second/second.component';
+//import { SecondComponent } from './second/second.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FirstChildComponent } from './first/first-child/first-child.component';
 import { FooterComponent } from './footer/footer.component';
@@ -14,12 +14,13 @@ import { ChildComponent } from './parent/child/child.component';
 import { BindingSessionComponent } from './binding-session/binding-session.component';
 import { FormsModule } from '@angular/forms';
 import { PipesComponent } from './pipes/pipes.component';
+import { AdditionPipe, ReversePipe, StringUtilPipe } from './custom-pipe/string-util.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    SecondComponent,
+   // SecondComponent,
     DashboardComponent,
     FirstChildComponent,
     FooterComponent,
@@ -27,7 +28,10 @@ import { PipesComponent } from './pipes/pipes.component';
     ParentComponent,
     ChildComponent,
     BindingSessionComponent,
-    PipesComponent
+    PipesComponent,
+    StringUtilPipe,
+    ReversePipe,
+    AdditionPipe
   ],
   imports: [
     BrowserModule,

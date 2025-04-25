@@ -34,4 +34,7 @@ export class PipesComponent {
     'fremale' : 'Ms.',
     'other' : 'Mx.'
   };
+
+  num1: number = 11;
+  num2: number = 22;
 }

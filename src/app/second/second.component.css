@@ -1,0 +1,13 @@
+.isActiveCSS {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.isDisabledCSS {
+  background-color: red;
+  color: black;
+  font-weight: normal;
+  font-size: 60px;
+}/*# sourceMappingURL=second.component.css.map */

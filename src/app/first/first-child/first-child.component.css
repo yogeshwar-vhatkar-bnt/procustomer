@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  margin: 2rem;
+}
+
+.container-item {
+  background: lightblue;
+  padding: 3rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  color: white;
+}/*# sourceMappingURL=first-child.component.css.map */
